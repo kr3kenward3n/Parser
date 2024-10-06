@@ -1,6 +1,16 @@
 package core;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
 public class JsonData {
+
     private final String name;
     private final int lineNumber;
 
@@ -9,11 +19,4 @@ public class JsonData {
         this.lineNumber = lineNumber;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getLineNumber() {
-        return lineNumber;
-    }
 }
