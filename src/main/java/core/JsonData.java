@@ -9,6 +9,7 @@ import lombok.ToString;
 @Setter
 @ToString
 @EqualsAndHashCode
+
 public class JsonData {
 
     private final String name;

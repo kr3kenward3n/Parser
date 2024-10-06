@@ -1,5 +1,15 @@
 package core;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
+
 public class CsvData {
     private String name;
     private int lineNumber;
@@ -9,11 +19,4 @@ public class CsvData {
         this.lineNumber = lineNumber;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getLineNumber() {
-        return lineNumber;
-    }
 }
